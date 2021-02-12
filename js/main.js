@@ -1,8 +1,6 @@
 window.onload = main;
 
-let highscore = if(JSON.parse(localStorage.getItem("highscore"))){
-                        JSON.parse(localStorage.getItem("highscore"))}
-                else{0};
+let highscore = 0;
 let canvas;
 let ctx;
 let score;
