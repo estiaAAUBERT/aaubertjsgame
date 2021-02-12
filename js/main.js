@@ -238,7 +238,7 @@ function spawnEnemies(){
 function HighscoreStorage(){
     if(score >= highscore){
         highscore = score;
-        localStorage.setItem("highscore", JSON.stringify(highscore));
+        //localStorage.setItem("highscore", JSON.stringify(highscore));
     };
 
 }
