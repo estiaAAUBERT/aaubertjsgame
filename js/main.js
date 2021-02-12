@@ -1,6 +1,8 @@
 window.onload = main;
 
-let highscore = JSON.parse(sessionStorage.getItem("highscore"));
+let highscore = if(JSON.parse(localStorage.getItem("highscore"))){
+                        JSON.parse(localStorage.getItem("highscore"))}
+                else{0};
 let canvas;
 let ctx;
 let score;
@@ -238,7 +240,7 @@ function spawnEnemies(){
 function HighscoreStorage(){
     if(score >= highscore){
         highscore = score;
-        sessionStorage.setItem("highscore", JSON.stringify(highscore));
+        localStorage.setItem("highscore", JSON.stringify(highscore));
     };
 
 }
