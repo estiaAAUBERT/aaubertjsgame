@@ -1,6 +1,6 @@
 window.onload = main;
 
-let highscore = 0;
+let highscore;
 let canvas;
 let ctx;
 let score;
